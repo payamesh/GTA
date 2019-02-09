@@ -1,0 +1,183 @@
+@import 'reset.css';
+
+@font-face {
+    font-family: 'Pricedown';
+    src:url("./fonts/PRICEDOWN-BL_0.TTF");
+}
+
+body{
+    background-image: url("./img/stockholm.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:100vh;
+    font-size:16px;
+}
+a {
+    color: white;
+    text-decoration: none;
+  }
+.wrapper{
+    width:90%;
+    margin:0% auto;
+    text-align: center;
+}
+
+.hero__header{
+    font-size:5vw;
+    color:white;
+    text-shadow:1px 1px black;
+    height:100%;
+    width: 100%;
+    
+    font-family: 'Pricedown';
+    margin-bottom: 2%;
+}
+.menu{
+    position: relative;
+    width:70%;
+    height: 70vh;
+    margin:0 auto 0 auto;
+    
+    background-color:black;
+    opacity: 0.8;
+}
+.menu__nav{
+    width:auto;
+    padding-right:20px;
+    padding-left:20px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+.menu__nav li{
+    position: relative;
+    margin: 3% 0% 0% 0%;
+    list-style: none;
+    font-size:25px;
+    font-family:'Pricedown';
+    color:white;
+    z-index: 1;
+    height:40px;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    font-size:2vw;
+ 
+}
+.menu__nav li p:before{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 5px;
+    bottom: 7%;
+   left:10%;
+    background: white;
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .25s linear;
+}
+.menu__nav>li>p:hover:before,
+h2 > p:focus:before {
+    
+  visibility: visible;
+  transform: scaleX(1);
+}
+.menu__line{
+    height: 5px;
+    width:90%;
+    margin:2% auto;
+    background-color:white;
+
+}
+.menu__content{
+    display:flex;
+    
+    width:80%;
+    color:white;
+    margin:0 auto;
+    font-size: 1vw;
+}
+.menu__content>p{
+    width: 50%;
+    padding:2%
+}
+.menu__left-p{
+    
+}
+.menu__right-p{
+}
+
+.menu__footer{
+  padding-top:3%;
+    position: absolute;
+   width: 100%;
+   right:2%;
+   bottom:2%;
+    color:white;
+    margin-bottom:20px;
+   
+    flex-direction: row;
+    
+}
+
+.menu__welcome{
+    width:100%;
+    text-align: center;
+
+   font-size: 2vw;
+   font-family:'Pricedown';
+
+
+}
+.menu__huvudstaden{
+    width:100%;
+    text-align:center;
+    color:white;
+    font-family:'Pricedown';
+   font-size: 2vw;
+    
+
+
+ 
+}
+.googledoc{
+    display:none;
+    width:100%;
+    height:100%;
+}
+
+
+@media(max-width:900px){
+    .menu{
+        height:90vh;
+    }
+    .menu__nav{
+        flex-direction:column;
+
+    }
+    .menu__nav li{
+        font-size:5vw;
+    }
+    .menu__content{
+        font-size:1.5vw;
+    }
+    .menu__left-p{
+        width:100%;
+        
+    }
+    .menu__right-p{
+        width:100%;
+        
+    }
+    .menu__nav li p:before{
+      
+        bottom: 10px;
+        
+       
+    }
+    
+}
